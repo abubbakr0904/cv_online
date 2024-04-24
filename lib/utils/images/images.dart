@@ -30,6 +30,12 @@ class AppImages{
   static const String mail = "assets/icons/mail.svg";
   static const String earth = "assets/icons/earth.svg";
 
+  static const String fast = "assets/icons/fast.svg";
+  static const String study = "assets/icons/study.svg";
+  static const String arrow = "assets/icons/arrow.svg";
+  static const String skills = "assets/icons/skills.svg";
+  static const String contact = "assets/icons/contact.svg";
+
 
   static const String cat = "assets/images/cat.png";
 }
