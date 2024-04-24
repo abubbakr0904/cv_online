@@ -20,5 +20,39 @@ class GlobalRepo{
     "The user is in the center."
   ];
 
+  static const List<String> codes = [
+    AppImages.css,
+    AppImages.html,
+    AppImages.js,
+    AppImages.figma,
+  ];
+
+  static const List<String> ext = [
+    "CSS3",
+    "HTML5",
+    "JAVA SCRIPT",
+    "FIGMA",
+  ];
+
+  static const List<String> country = [
+    AppImages.galikian,
+    AppImages.spanish,
+    AppImages.english,
+    AppImages.japan,
+    AppImages.french,
+  ];
+  static const List<String> country_la = [
+    "Galician",
+    "Spanish",
+    "English",
+    "Japanese",
+    "French",
+  ];
+  static const List<String> apps = [
+    AppImages.linkd,
+    AppImages.instagram,
+    AppImages.whatsapp,
+    AppImages.be
+    ];
 
 }

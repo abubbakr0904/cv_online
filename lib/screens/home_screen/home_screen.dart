@@ -163,7 +163,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ]
                       ),
                       child: Icon(
-                        Icons.arrow_back_outlined,
+                        Icons.arrow_forward,
                         color: Colors.white,
                         size: 16.sp,
                       ),

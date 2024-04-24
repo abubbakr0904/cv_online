@@ -12,5 +12,24 @@ class AppImages{
   static const String pdf = "assets/icons/pdf_icon.svg";
   static const String smileIcon = "assets/icons/smile_icon.svg";
   static const String saved = "assets/icons/saved.svg";
+  static const String css = "assets/icons/css_icon.svg";
+  static const String figma = "assets/icons/figma_icon.svg";
+  static const String html = "assets/icons/html_icon.svg";
+  static const String js = "assets/icons/js_icon.svg";
+  static const String vsCode = "assets/icons/vscode_icon.svg";
+  static const String galikian = "assets/icons/galikian.svg";
+  static const String spanish = "assets/icons/spanish.svg";
+  static const String english = "assets/icons/inglish.svg";
+  static const String japan = "assets/icons/japan.svg";
+  static const String french = "assets/icons/french.svg";
+  static const String linkd = "assets/icons/in.svg";
+  static const String instagram = "assets/icons/instagram.svg";
+  static const String whatsapp = "assets/icons/whatsapp.svg";
+  static const String be = "assets/icons/be.svg";
+  static const String phone = "assets/icons/phone.svg";
+  static const String mail = "assets/icons/mail.svg";
+  static const String earth = "assets/icons/earth.svg";
+
+
   static const String cat = "assets/images/cat.png";
 }

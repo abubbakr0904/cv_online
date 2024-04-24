@@ -45,62 +45,132 @@ class _AcademicScreenState extends State<AcademicScreen> {
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 36.h,),
-            ...List.generate(4, (index) => Container(
-                width: double.infinity,
-                height: 140,
-                child : Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
                   children: [
-                    IconButton(onPressed: (){}, icon: SvgPicture.asset(AppImages.saved , width: 14.w,height: 20.h,fit : BoxFit.cover)),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Graduate",
-                          style: TextStyle(
-                            color: AppColor.uiBlue,
-                            fontSize: 16.sp,
-                            fontWeight: FontWeight.w300,
-                            fontFamily: AppImages.fontPoppins,
-                          ),
-                        ),
-                        Text(
-                          "Journalism",
-                          style: TextStyle(
-                            color: AppColor.uiBlue,
-                            fontSize: 20.sp,
-                            fontWeight: FontWeight.w700,
-                            fontFamily: AppImages.fontPoppins,
-                          ),
-                        ),
-                        Text(
-                          "Universidad Pontificia de \nSalamanca",
-                          style: TextStyle(
-                            color: AppColor.uiBlue,
-                            fontSize: 16.sp,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: AppImages.fontPoppins,
-                          ),
-                          maxLines: 2,
-                        ),
-                        Text(
-                          "Year : 2007",
-                          style: TextStyle(
-                            color: AppColor.uiBlue,
-                            fontSize: 12.sp,
-                            fontWeight: FontWeight.w200,
-                            fontFamily: AppImages.fontPoppins,
-                          ),
-                          maxLines: 2,
-                        ),
+                    ...List.generate(4, (index) => Container(
+                        width: double.infinity,
+                        height: 140,
+                        child : Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            IconButton(onPressed: (){}, icon: SvgPicture.asset(AppImages.saved , width: 14.w,height: 20.h,fit : BoxFit.cover)),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Graduate",
+                                  style: TextStyle(
+                                    color: AppColor.uiBlue,
+                                    fontSize: 16.sp,
+                                    fontWeight: FontWeight.w300,
+                                    fontFamily: AppImages.fontPoppins,
+                                  ),
+                                ),
+                                Text(
+                                  "Journalism",
+                                  style: TextStyle(
+                                    color: AppColor.uiBlue,
+                                    fontSize: 20.sp,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: AppImages.fontPoppins,
+                                  ),
+                                ),
+                                Text(
+                                  "Universidad Pontificia de \nSalamanca",
+                                  style: TextStyle(
+                                    color: AppColor.uiBlue,
+                                    fontSize: 16.sp,
+                                    fontWeight: FontWeight.w500,
+                                    fontFamily: AppImages.fontPoppins,
+                                  ),
+                                  maxLines: 2,
+                                ),
+                                Text(
+                                  "Year : 2007",
+                                  style: TextStyle(
+                                    color: AppColor.uiBlue,
+                                    fontSize: 12.sp,
+                                    fontWeight: FontWeight.w200,
+                                    fontFamily: AppImages.fontPoppins,
+                                  ),
+                                  maxLines: 2,
+                                ),
 
 
-                      ],
-                    )
+                              ],
+                            )
+                          ],
+                        )
+                    ))
                   ],
-                )
-            ))
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 10.h),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 48.w,
+                    height: 48.w,
+                    decoration: BoxDecoration(
+                        color: const Color(0xFFFFC3DF),
+                        borderRadius: BorderRadius.circular(100.r),
+                        border: Border.all(width: 2, color: Colors.white),
+                        boxShadow: [
+                          BoxShadow(
+                              offset: Offset(0 , 4),
+                              spreadRadius: 1,
+                              blurRadius: 100,
+                              color: Colors.black.withOpacity(0.3)
+                          )
+                        ]
+                    ),
+                    child: Icon(
+                      Icons.arrow_back_outlined,
+                      color: Colors.white,
+                      size: 16.sp,
+                    ),
+                  ),
+                  TextButton(
+                      style: TextButton.styleFrom(
+                          backgroundColor:const  Color(0xFFFFC3DF)
+                      ),
+                      onPressed: (){}, child: Text("Home" , style: TextStyle(
+                    color : Colors.white,
+                    fontFamily: AppImages.fontPoppins,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 20.sp,
+                  ),)),
+                  Container(
+                    width: 48.w,
+                    height: 48.w,
+                    decoration: BoxDecoration(
+                        color: const Color(0xFFFFC3DF),
+                        borderRadius: BorderRadius.circular(100.r),
+                        border: Border.all(width: 2, color: Colors.white),
+                        boxShadow: [
+                          BoxShadow(
+                              offset: Offset(0 , 4),
+                              spreadRadius: 1,
+                              blurRadius: 100,
+                              color: Colors.black.withOpacity(0.3)
+                          )
+                        ]
+                    ),
+                    child: Icon(
+                      Icons.arrow_forward,
+                      color: Colors.white,
+                      size: 16.sp,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         )
       )
